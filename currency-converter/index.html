@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id='container'>
+    <h1>Currency Converter</h1>
+
+    <div id='fromForm' class='formContainer'>
+        <p id='fromName'></p>
+        <p id='errorMessage'>Input must be a number</p>
+        <form class='info'>
+            <select class='currencySelector' id='fromCurrency'></select>
+            <input type='text' id='fromValue' maxlength="9" class='valueInput'>
+        </form>
+    </div>
+
+    <button id='swapButton'>Swap
+    </button>
+
+    <div id='toForm' class='formContainer'>
+        <p id='toName'></p>
+        <form  class='info'>
+            <select class='currencySelector' id='toCurrency'></select>
+            <input type='text' id='toValue' class='valueInput' disabled>
+        </form>
+
+    </div>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
